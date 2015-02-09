@@ -1,3 +1,26 @@
 @import 'bootstrap';
 
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
 body { background-color: #fff; }
+
+header {
+  margin: 0 0 20px 0;
+}
+
+.nav {
+  li {
+    display: inline-block;
+    list-style-type: none;
+  }
+}
+
+.main-nav {
+  float: left;
+}
+
+.user-nav {
+  float: right;
+}
